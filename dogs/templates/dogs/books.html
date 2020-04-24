@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<h1>HERE IS OUR FRESH LIST OF BOOKS</h1>
+		<ul>
+
+			
+			{% for book in books %}
+				<li>{{ book.title }}</li>
+				
+			{% endfor %}
+		</ul>
+
+		<h1>HERE are some covers</h1>
+
+			<img src="{{ img_url.small }}" alt="">
+			<img src="{{ img_url.medium }}" alt="">
+			<img src="{{ img_url.large }}" alt="">
+	</body>
+</html>
